@@ -24,6 +24,3 @@ def fn_proxy():
     os.killpg(os.getpgid(arti_process.pid), signal.SIGTERM)
     print(r.text)
     return r.text
-
-if __name__ == '__main__':
-    app.run()
